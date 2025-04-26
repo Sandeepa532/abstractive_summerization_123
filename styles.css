@@ -1,0 +1,43 @@
+/* styles.css */
+
+html, body, [class*="css"] {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Titles */
+h1 {
+    color: #4A6FA5;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2, h3 {
+    color: #333333;
+}
+
+/* Buttons */
+button[kind="primary"] {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 24px;
+}
+
+button[kind="primary"]:hover {
+    background-color: #45a049;
+}
+
+/* Inputs and Uploads */
+textarea, .stTextInput, .stFileUploader {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+/* Success Box */
+.stSuccess {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border-radius: 10px;
+    padding: 10px;
+}
