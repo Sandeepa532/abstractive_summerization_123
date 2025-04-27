@@ -3,12 +3,19 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from keybert import KeyBERT
 import torch
-import nltk
-nltk.download('punkt')
 from typing import List, Dict
+import nltk
+import os
 
-nltk.download('punkt')
+nltk_data_path = os.path.join(os.getcwd(), 'nltk_data')
+if not os.path.exists(nltk_data_path):
+    os.makedirs(nltk_data_path)
+
+nltk.download('punkt', download_dir=nltk_data_path)
+nltk.data.path.append(nltk_data_path)
+
 from nltk.tokenize import sent_tokenize
+
 
 def load_summarization_model(model_name="facebook/bart-large-cnn"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
