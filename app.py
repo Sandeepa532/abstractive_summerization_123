@@ -31,10 +31,7 @@ kpm_model = KeyBERT()
 st.subheader("📄 Input Your Document")
 # app.py
 
-uploaded_file = st.file_uploader(
-    "Upload a document (.txt, .pdf, .docx)", 
-    type=["txt", "pdf", "docx"]
-)
+st.file_uploader("Upload a document (.txt, .docx)", type=["txt", "docx"])
 
 text_input = st.text_area("Or paste your text here:", height=300)
 
