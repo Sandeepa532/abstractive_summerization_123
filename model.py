@@ -4,6 +4,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from keybert import KeyBERT
 import torch
 import nltk
+nltk.download('punkt')
 from typing import List, Dict
 
 nltk.download('punkt')
