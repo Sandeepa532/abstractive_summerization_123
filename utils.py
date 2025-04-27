@@ -1,6 +1,4 @@
-# utils.py
-
-import docx  # Only DOCX, no PDF
+import docx  # Only DOCX, no fitz
 
 def read_uploaded_file(uploaded_file):
     file_name = uploaded_file.name.lower()
@@ -14,3 +12,9 @@ def read_uploaded_file(uploaded_file):
     
     else:
         return None
+
+def clean_text(text: str) -> str:
+    """
+    Basic text cleaning (remove line breaks, trim spaces).
+    """
+    return text.replace("\n", " ").strip()
