@@ -1,9 +1,13 @@
 streamlit
-torch
 transformers
+torch
 keybert
 scikit-learn
 sentence-transformers
 nltk
+PyMuPDF
+python-docx
+openai
+
 
 
